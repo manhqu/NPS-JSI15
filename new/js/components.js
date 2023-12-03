@@ -1,43 +1,51 @@
-const components = {}; // Đùng để lưu trữ giao diện các màn hình tại đây
+const components = {};
 
+
+
+
+components.footer = `
+
+
+`
 
 components.nav = `
 <div class="nav">
-<ul>
-  <li class="nav home">
-    <a href="#">Home Page</a>
-    </li>
+  <ul>
+    
+    <li id="home" class="nav home">
+      <a href="#">Home Page</a>
+      </li>
 
-    <li class="nav home">
-      <a href="#">Contact</a>
-    </li>
-    
-    <li class="nav home">
-      <a href="#">About us</a>
-    </li>
-    
-    <li class="nav home">
-    <a href="#">List Manga</a>
-    </li>
-    <li id="screen" class="nav home">
+      <li id="contact" class="nav home">
+        <a href="#">Hot</a>
+      </li>
+      
+      <li id="about" class="nav home">
+        <a href="#">About us</a>
+      </li>
+      
+      <li id="screen" class="nav home">
     <a href="#">Login</a>
     </li>
-  </ul>
-</div>`
+
+    </ul>
+    
+  </div>
+  `
 
 components.registerScreen = `
 <div class="nav">
   <ul>
     
-    <li class="nav home">
+    <li id="home" class="nav home">
       <a href="#">Home Page</a>
       </li>
 
-      <li class="nav home">
-        <a href="#">Contact</a>
+      <li id="contact" class="nav home">
+        <a href="#">Hot</a>
       </li>
       
-      <li class="nav home">
+      <li id="about" class="nav home">
         <a href="#">About us</a>
       </li>
       
@@ -97,6 +105,8 @@ components.registerScreen = `
       </form>
     </div>
   </div>
+
+
 `;
 
 
@@ -104,23 +114,24 @@ components.loginScreen = `
 <div class="nav">
   <ul>
     
-    <li class="nav home">
+    <li id="home" class="nav home">
       <a href="#">Home Page</a>
       </li>
 
-      <li class="nav home">
-        <a href="#">Contact</a>
+      <li id="contact" class="nav home">
+        <a href="#">Hot</a>
       </li>
       
-      <li class="nav home">
+      <li id="about" class="nav home">
         <a href="#">About us</a>
       </li>
-<li id="screen" class="nav home">
+      
+      <li id="screen" class="nav home">
     <a href="#">Login</a>
     </li>
 
     </ul>
-
+    
   </div>
 
 <div class="login-container">
@@ -153,6 +164,20 @@ components.loginScreen = `
       </form>
     </div>
   </div>
+
+  <div class="footer-basic">
+  <footer>
+      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item"><a href="#">Services</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      
+  </footer>
+  </div>
 `;
 
 
@@ -160,31 +185,82 @@ components.homeScreen = `
 <div class="nav">
   <ul>
     
-    <li class="nav home">
+    <li id="home" class="nav home">
       <a href="#">Home Page</a>
       </li>
 
-      <li class="nav home">
-        <a href="#">Contact</a>
+      <li id="contact" class="nav home">
+        <a href="#">Hot</a>
       </li>
       
-      <li class="nav home">
+      <li id="about" class="nav home">
         <a href="#">About us</a>
       </li>
       
-      <li class="nav home">
-      <a href="#">List Manga</a>
-      </li>
       <li id="screen" class="nav home">
-      <a href="#">Login</a>
-      </li>
+    <a href="#">Login</a>
+    </li>
+
     </ul>
-    
-    
     
   </div>
 
+
+
 `;
+
+
+components.contactScreen = `
+<div class="nav">
+  <ul>
+    
+    <li id="home" class="nav home">
+      <a  href="#">Home Page</a>
+      </li>
+
+      <li id="contact" class="nav home">
+        <a href="#">Hot</a>
+      </li>
+      
+      <li id="about" class="nav home">
+        <a href="#">About us</a>
+      </li>
+      
+      <li id="screen" class="nav home">
+    <a href="#">Login</a>
+    </li>
+
+    </ul>
+  </div>
+
+
+
+`
+
+components.aboutScreen =`
+
+<div class="nav">
+  <ul>
+    
+    <li id="home" class="nav home">
+      <a  href="#">Home Page</a>
+      </li>
+
+      <li id="contact" class="nav home">
+        <a href="#">Hot</a>
+      </li>
+      
+      <li id="about" class="nav home">
+        <a href="#">About us</a>
+      </li>
+      
+      <li id="screen" class="nav home">
+    <a href="#">Login</a>
+    </li>
+
+    </ul>
+
+`
 
 
 
